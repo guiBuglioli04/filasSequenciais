@@ -1,6 +1,4 @@
-import java.sql.SQLOutput;
-
-public class filaInt {
+public class FilaInt {
     final int N=3;
     int [] dados = new int[N];
     int ini,fim , cont;
@@ -24,6 +22,18 @@ public class filaInt {
             dados[fim] = elem;
             cont++;
             fim = (fim+1 )%N;
+
         }
+    }
+
+    public int dequeue(){
+        int elem = dados[ini];
+        cont --;
+        ini = (ini+1) %N;
+        return elem;
+    }
+
+    public int first(){
+        return (dados[ini]);
     }
 }
