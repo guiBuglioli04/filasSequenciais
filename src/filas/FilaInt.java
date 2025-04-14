@@ -1,3 +1,5 @@
+package filas;
+
 public class FilaInt {
     final int N=3;
     int [] dados = new int[N];
